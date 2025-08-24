@@ -1,0 +1,20 @@
+{
+  "name": "mbjc",
+  "version": "1.0.1",
+  "description": "A zero-dependency partial drop-in replacement for @skyware/jetstream in <2kB.",
+  "homepage": "https://github.com/tbarron-xyz/minimal-bsky-jetstream-client#readme",
+  "bugs": {
+    "url": "https://github.com/tbarron-xyz/minimal-bsky-jetstream-client/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbarron-xyz/minimal-bsky-jetstream-client.git"
+  },
+  "license": "UNLICENSED",
+  "author": "",
+  "type": "module",
+  "main": "jetstream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
