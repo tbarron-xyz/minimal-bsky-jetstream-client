@@ -1,5 +1,5 @@
 # minimal-bsky-jetstream-client
-A zero-dependency partial drop-in replacement for @skyware/jetstream in <2kB. 
+A zero-dependency partial drop-in replacement for @skyware/jetstream in <1kB. 
 
 `jetstream.min.js` is <1.5kB raw, <0.9kB minified; `tinyjetstream.js` is <0.5kB raw, <0.4kB minified.
 
