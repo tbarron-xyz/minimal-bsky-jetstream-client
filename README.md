@@ -2,9 +2,9 @@
 A zero-dependency partial drop-in replacement for @skyware/jetstream in <2kB.
 
 # Usage
+`Jetstream` conforms to a small subset of the `@skyware/jetstream` API.
 ```
 import { Jetstream } from 'https://cdn.jsdelivr.net/gh/tbarron-xyz/minimal-bsky-jetstream-client@latest/jetstream.min.js'
-
 
 const jetstream = new Jetstream();
 
@@ -13,7 +13,7 @@ jetstream.onTweet(event => {
 });
 
 jetstream.onCreate("app.bsky.graph.follow", event => {
-  console.log(event.detail.commit.record.text);
+  console.log(event.commit.record.text);
 });
 
 jetstream.onDelete("app.bsky.feed.post", event => {
@@ -22,6 +22,16 @@ jetstream.onDelete("app.bsky.feed.post", event => {
 
 jetstream.start();
 
+jetstream.stop();
+```
+
+`TinyJetstream` is even smaller.
+
+```
+import { TinyJetstream as Jetstream } from 'https://cdn.jsdelivr.net/gh/tbarron-xyz/minimal-bsky-jetstream-client@latest/tinyjetstream.min.js'
+const jetstream = new Jetstream();
+jetstream.onTweet = e => { console.log(e); };
+jetstream.start();
 jetstream.stop();
 ```
 

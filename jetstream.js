@@ -46,7 +46,7 @@ export class Jetstream {
 
       const emitter = this.emitters.get(data.commit.collection);
       if (!emitter) return;
-      emitter.dispatchEvent(new CustomEvent(data.commit.operation, { detail: data }));
+      emitter.dispatchEvent(new CustomEvent(data.commit.operation, data));
     };
   }
 
