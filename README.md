@@ -21,6 +21,8 @@ jetstream.onDelete("app.bsky.feed.post", event => {
 });
 
 jetstream.start();
+
+jetstream.stop();
 ```
 
 # Origin

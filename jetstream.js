@@ -1,7 +1,7 @@
 export class Jetstream {
   endpoint = "jetstream1.us-east.bsky.network";
   emitters = new Map();
-        ws = null;
+  ws = null;
 
   get url() {
     const url = new URL(`wss://${this.endpoint}/subscribe`);
@@ -37,7 +37,7 @@ export class Jetstream {
   }
 
   start() {
-    if (this.ws) this.ws.close();
+    this.stop();
 
     this.ws = new WebSocket(this.url);
     this.ws.onmessage = ev => {
@@ -49,6 +49,8 @@ export class Jetstream {
       emitter.dispatchEvent(new CustomEvent(data.commit.operation, { detail: data }));
     };
   }
+
+  stop() {if (this.ws) this.ws.close(); }
 
   onTweet(listener) { // syntactic sugar for the most common use case, the creation of a new tweet
     this.onCreate("app.bsky.feed.post", listener);
