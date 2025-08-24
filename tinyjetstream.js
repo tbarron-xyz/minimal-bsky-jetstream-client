@@ -1,6 +1,5 @@
-export class TinyJetstream {  // usage: const j = new Jetstream(); j.onTweet = (tweet) => { console.log(tweet.commit.record.text) }
+export class TinyJetstream {
   ws = null;
-
   start() {
     this.stop();
     this.ws = new WebSocket("wss://jetstream1.us-east.bsky.network/subscribe?wantedCollections=app.bsky.feed.post");
@@ -12,8 +11,6 @@ export class TinyJetstream {  // usage: const j = new Jetstream(); j.onTweet = (
       }
     };
   }
-
   stop() { if (this.ws) this.ws.close(); }
-
-  onTweet = (e) => {} // text is located at e.commit.record.text
+  onTweet = (e) => {}
 }
