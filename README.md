@@ -1,10 +1,12 @@
 # minimal-bsky-jetstream-client
-A zero-dependency partial drop-in replacement for @skyware/jetstream in <2kB.
+A zero-dependency partial drop-in replacement for @skyware/jetstream in <2kB. 
+
+`jetstream.min.js` is <1.5kB raw, <1.2kB minified; `tinyjetstream.js` is <0.5kB raw.
 
 # Usage
 `Jetstream` conforms to a small subset of the `@skyware/jetstream` API.
 ```
-import { Jetstream } from 'https://cdn.jsdelivr.net/gh/tbarron-xyz/minimal-bsky-jetstream-client@latest/jetstream.min.js'
+import { Jetstream } from 'https://cdn.jsdelivr.net/npm/mbjc@1.0.1/jetstream.min.js'
 
 const jetstream = new Jetstream();
 
@@ -28,7 +30,7 @@ jetstream.stop();
 `TinyJetstream` is even smaller.
 
 ```
-import { TinyJetstream as Jetstream } from 'https://cdn.jsdelivr.net/gh/tbarron-xyz/minimal-bsky-jetstream-client@latest/tinyjetstream.min.js'
+import { TinyJetstream as Jetstream } from 'https://cdn.jsdelivr.net/npm/mbjc@1.0.1/tinyjetstream.js'
 const jetstream = new Jetstream();
 jetstream.onTweet = e => { console.log(e); };
 jetstream.start();
