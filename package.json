@@ -1,7 +1,7 @@
 {
   "name": "mbjc",
-  "version": "1.0.2",
-  "description": "A zero-dependency partial drop-in replacement for @skyware/jetstream in <2kB.",
+  "version": "1.0.3",
+  "description": "A zero-dependency partial drop-in replacement for @skyware/jetstream in <1kB.",
   "homepage": "https://github.com/tbarron-xyz/minimal-bsky-jetstream-client#readme",
   "bugs": {
     "url": "https://github.com/tbarron-xyz/minimal-bsky-jetstream-client/issues"

@@ -10,10 +10,10 @@ A zero-dependency partial drop-in replacement for `@skyware/jetstream` in <1kB.
 
 In node, it can be imported via `import { Jetstream } from 'mbjc'` after running `npm install mbjc`. 
 
-In deno or the browser, it can be imported via CDN with `import { Jetstream } from 'https://cdn.jsdelivr.net/npm/mbjc@1.0.2/jetstream.min.js'
+In deno or the browser, it can be imported via CDN with `import { Jetstream } from 'https://cdn.jsdelivr.net/npm/mbjc@1.0.3/jetstream.min.js'
 `.
 ```
-import { Jetstream } from 'https://cdn.jsdelivr.net/npm/mbjc@1.0.2/jetstream.min.js'
+import { Jetstream } from 'https://cdn.jsdelivr.net/npm/mbjc@1.0.3/jetstream.min.js'
 
 const jetstream = new Jetstream({ endpoint: "jetstream1.us-east.bsky.network" });
 
