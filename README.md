@@ -38,5 +38,13 @@ jetstream.start();
 jetstream.stop();
 ```
 
+# CLI Usage
+Run `node index.js [n]` to collect `n` tweets (default 10) and output them as JSON.
+
+```bash
+$ node index.js 2
+[{"did":"did:plc:example1","text":"Hello world","timeMs":1727891234567},{"did":"did:plc:example2","text":"Another tweet","timeMs":1727891234568}]
+```
+
 # Origin
 This code is happily copied with small changes from https://jakelazaroff.com/words/drinking-from-the-bluesky-firehose/ where it is encouraged to "Use it, modify it and make something cool."
